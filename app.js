@@ -35,7 +35,7 @@ mongoose.connect('mongodb://localhost:27017/vcProject', { useNewUrlParser: true 
   })
 })
 
-app.use(express.static(__dirname + "public"));
+app.use(express.static(__dirname + "dist"));
 app.use(cors());
 
 app.get('/users', (req, res) => {
